@@ -63,9 +63,9 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 #+end_src
 
+
 * Play with code from repository
 - Proper goop repository is ~~github.com/karmakaze/goop~. Should change in Dockerfile
-
 #+begin_src shell
 go get github.com/karmakaze/goop # should be run as root
 goop install
@@ -75,11 +75,65 @@ goop go run api.go convert.go
 
 - Ash is the alpine shell
 
-  The port is defined in ~main()~ in line 66
-
+- The port is defined in ~main()~ in line 66 of file api.go, this should be a variable, not hardcoded
 #+begin_src go
 log.Fatal(http.ListenAndServe(":8000", router))
 #+end_src
+
+- Test are run like this
+#+begin_src shell
+go get github.com/stretchr/testify/assert
+goop go test
+#+end_src
+
+* Jenkins with Go
+  https://plugins.jenkins.io/golang/
+
+* Installing and running Docker on CentOS 7
+
+  #+begin_src shell
+sudo yum -y update
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce docker-ce-cli containerd.io
+sudo systemctl start docker
+# sudo docker run hello-world # only to test
+  #+end_src
+
+* Building Dockerfile and running
+
+#+begin_src shell
+docker build -t gom .
+docker run -ti -p 8000:8000 gom
+#+end_src
+
+exec commands
+#+begin_src
+docker exec -it <container> <command>
+#+end_src
+
+* Fixed Dockerfile
+
+#+begin_src Dockerfile
+FROM golang:1.15-alpine
+
+ENV GOPATH=/go:/app
+RUN apk add --update git
+RUN apk add build-base
+WORKDIR /app
+
+COPY Goopfile Goopfile
+RUN go get github.com/Pepegasca/goop \
+    && go get github.com/gorilla/mux \
+    && go get github.com/stretchr/testify/assert \
+    && goop install
+
+COPY . .
+CMD ["ash", "-c", "goop go run api.go convert.go"]
+# docker build -t gom .
+# docker run -ti -p 8000:8000 gom
+#+end_src
+
 
 
 
@@ -89,3 +143,19 @@ log.Fatal(http.ListenAndServe(":8000", router))
 - [[https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-kanban][What is Kanban]]
 - [[https://www.redhat.com/en/blog/integrating-ansible-jenkins-cicd-process][Integrating ansible with jenikns in a CI/CD process]]
 - [[https://www.bantrain.com/how-to-setup-sonarqube-jenkins/][How to Setup Sonarqube & Jenkins]]
+
+- jenkins and golang  https://plugins.jenkins.io/golang/
+- goop https://github.com/karmakaze/goop
+- goop error https://github.com/petejkim/goop/issues/44
+- goop manual https://nicedoc.io/petejkim/goop
+
+- Go environment error
+
+  https://stackoverflow.com/q/18149601
+
+- Go environment variables
+  https://stackoverflow.com/a/49595197
+
+- Go tests error ~error during install strechr/testify, undefined: errors.Is~
+  https://github.com/stretchr/testify/issues/991
+  Fix with Go 1.13
