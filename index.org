@@ -1,0 +1,51 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+AUTHOR: Alberto Flores
+#+EMAIL: albertoefg@outlook.com
+#+DATE: <2020-12-12 sáb>
+#+TITLE: Final Challenge
+#+LANGUAGE: en
+* Kanban
+|-----------------------------------------+-------+------------------|
+| TODO                                    | Doing | Done             |
+|-----------------------------------------+-------+------------------|
+| Learn about Architecture Diagrams       |       |                  |
+|-----------------------------------------+-------+------------------|
+| Design Processes Diagram                |       |                  |
+|-----------------------------------------+-------+------------------|
+| Design Information Flow                 |       |                  |
+|-----------------------------------------+-------+------------------|
+|                                         |       | Clone Repository |
+|-----------------------------------------+-------+------------------|
+| Install Jenkins, docker, sonarqube, git |       |                  |
+|-----------------------------------------+-------+------------------|
+| Learn about Go toolchain                |       |                  |
+|-----------------------------------------+-------+------------------|
+| Play with code from repository          |       |                  |
+|-----------------------------------------+-------+------------------|
+| Start Jenkinsfile pipeline              |       |                  |
+| (Iterative Design)                      |       |                  |
+|-----------------------------------------+-------+------------------|
+| Learn about Sonar Qube                  |       |                  |
+|-----------------------------------------+-------+------------------|
+| Integrate Sonar Qube                    |       |                  |
+|-----------------------------------------+-------+------------------|
+| Implement Unit Testing                  |       |                  |
+|-----------------------------------------+-------+------------------|
+| Put the environemnt into a Dockerfile   |       |                  |
+|-----------------------------------------+-------+------------------|
+| Secure Jenkins                          |       |                  |
+|-----------------------------------------+-------+------------------|
+|                                         |       |                  |
+|-----------------------------------------+-------+------------------|
+
+* Notes
+
+- [[https://www.redhat.com/architect/diagramming-tools-cloud-infrastructure][6 architectural diagramming tools for cloud infrastructure]]
+- [[https://gitlab.com/redhatdemocentral/portfolio-architecture-examples][Portfolio Architecture Examples]]
+- [[https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-kanban][What is Kanban]]
+- [[https://www.redhat.com/en/blog/integrating-ansible-jenkins-cicd-process][Integrating ansible with jenikns in a ci cd process]]
+
+
+
+* Repository
+  https://github.com/albertoefguerrero/DOTT
