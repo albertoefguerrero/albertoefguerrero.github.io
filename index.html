@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-12-15 mar 16:45 -->
+<!-- 2020-12-16 mié 12:45 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Final Challenge</title>
@@ -229,36 +229,46 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orge340e73">1. - Kanban</a></li>
-<li><a href="#org607ea48">2. - Architecture Diagram</a></li>
-<li><a href="#org4d38895">3. - Process Flow</a></li>
-<li><a href="#orge507f1a">4. - Repository</a></li>
-<li><a href="#orgb868198">5. Learn about go toolchain</a></li>
-<li><a href="#orgfae7722">6. Play with code from repository</a></li>
-<li><a href="#orgfde6a29">7. Jenkins with Go</a></li>
-<li><a href="#org3ca0568">8. Installing and running Docker on CentOS 7</a></li>
-<li><a href="#orgacc43a1">9. Building Dockerfile and running</a></li>
-<li><a href="#org3405e51">10. Fixed Dockerfile</a></li>
-<li><a href="#org4b2ad3d">11. Jenkins with BlueOcean</a>
+<li><a href="#org3993cd5">1. - Kanban</a></li>
+<li><a href="#org3c99dd6">2. - Architecture Diagram</a></li>
+<li><a href="#org957191e">3. - Process Flow</a></li>
+<li><a href="#org039ebfc">4. - Repository</a></li>
+<li><a href="#org539105c">5. Learn about go toolchain</a></li>
+<li><a href="#org70d85e0">6. Play with code from repository</a></li>
+<li><a href="#org300427b">7. Jenkins with Go</a></li>
+<li><a href="#org8ba629d">8. Installing and running Docker on CentOS 7</a></li>
+<li><a href="#org625a7f4">9. Building Dockerfile and running</a></li>
+<li><a href="#org94e5292">10. Fixed Dockerfile</a></li>
+<li><a href="#org5779a42">11. Jenkins with BlueOcean</a>
 <ul>
-<li><a href="#orgf257f8e">11.1. Installing with docker</a></li>
-<li><a href="#org7cd3b3d">11.2. Webhook</a></li>
-<li><a href="#org7c6fc82">11.3. Creating a Pipeline</a></li>
+<li><a href="#org8bcacbb">11.1. Installing with docker</a></li>
+<li><a href="#org39ae40d">11.2. Webhook</a></li>
+<li><a href="#orgb31a6ea">11.3. Creating a Pipeline</a></li>
 </ul>
 </li>
-<li><a href="#org8bce989">12. Creating a custom Dockerfile with Jenkins, BlueOcean, Go and dependencies</a>
+<li><a href="#org7c63149">12. Creating a custom Dockerfile with Jenkins, BlueOcean, Go and dependencies</a></li>
+<li><a href="#orgc14a972">13. Custom Dockerfile with Jenkins BlueOcean and Docker</a>
 <ul>
-<li><a href="#org44d1af1">12.1. Running Custom Docker image</a></li>
-<li><a href="#org2497d79">12.2. <span class="todo TODO">TODO</span> This will create a new Jenkins instance, we have to setup credentials again.</a></li>
-<li><a href="#org01be3bb">12.3. <span class="todo TODO">TODO</span> Crate an image out of custom image with all credentials</a></li>
+<li><a href="#orgc838a7a">13.1. Running Custom Docker image</a></li>
+<li><a href="#org7b191b0">13.2. <span class="todo TODO">TODO</span> This will create a new Jenkins instance, we have to setup credentials again.</a></li>
+<li><a href="#org51e7ad1">13.3. <span class="todo TODO">TODO</span> Crate an image out of custom image with all credentials</a></li>
+<li><a href="#org9a61bc4">13.4. <span class="todo TODO">TODO</span> jenkins with docker https://medium.com/@karthi.net/docker-tutorial-build-docker-images-using-jenkins-d2880e65b74</a></li>
+<li><a href="#orgb7d3e01">13.5. <span class="todo TODO">TODO</span> Integrating SonarQube and Jenkins https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/</a></li>
+<li><a href="#orgacea895">13.6. <span class="todo TODO">TODO</span> SonarScanner for Jenkins https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/</a></li>
+<li><a href="#orge79489d">13.7. <span class="todo TODO">TODO</span> Try Out SonarQube https://docs.sonarqube.org/latest/setup/get-started-2-minutes/</a></li>
+<li><a href="#orgcb4f6b2">13.8. <span class="todo TODO">TODO</span> Dockerhub - SonarQube https://hub.docker.com/_/sonarqube/</a></li>
+<li><a href="#org6e6829a">13.9. <span class="todo TODO">TODO</span> SonarQube - Docker installation https://techexpert.tips/sonarqube/sonarqube-docker-installation/</a></li>
+<li><a href="#orgc3a15ac">13.10. <span class="todo TODO">TODO</span> Prerequisites and Overview https://docs.sonarqube.org/latest/requirements/requirements/</a></li>
+<li><a href="#org0f9c514">13.11. <span class="todo TODO">TODO</span> Keep the app running</a></li>
+<li><a href="#orgbc7e099">13.12. <span class="todo TODO">TODO</span> Docker code in an external</a></li>
 </ul>
 </li>
-<li><a href="#orgeaae751">13. - Notes</a></li>
+<li><a href="#org8e9a597">14. - Notes</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge340e73" class="outline-2">
-<h2 id="orge340e73"><span class="section-number-2">1</span> - Kanban</h2>
+<div id="outline-container-org3993cd5" class="outline-2">
+<h2 id="org3993cd5"><span class="section-number-2">1</span> - Kanban</h2>
 <div class="outline-text-2" id="text-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -405,16 +415,16 @@
 </tbody>
 <tbody>
 <tr>
-<td class="org-left">Implement Unit Testing</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">Jenkins and Docker Orchestration</td>
 </tr>
 </tbody>
 <tbody>
 <tr>
-<td class="org-left">Put the environemnt into a custom docker image</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">Docker !!</td>
 </tr>
 </tbody>
 <tbody>
@@ -426,7 +436,7 @@
 </tbody>
 <tbody>
 <tr>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Fix the code</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
@@ -435,38 +445,38 @@
 </div>
 </div>
 
-<div id="outline-container-org607ea48" class="outline-2">
-<h2 id="org607ea48"><span class="section-number-2">2</span> - Architecture Diagram</h2>
+<div id="outline-container-org3c99dd6" class="outline-2">
+<h2 id="org3c99dd6"><span class="section-number-2">2</span> - Architecture Diagram</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="https://viewer.diagrams.net/?highlight=0000ff&amp;edit=_blank&amp;layers=1&amp;nav=1#R7Vrdc9o4EP9reISxJduYRxJCOze9Tq9pJ9enjLCF0SFbnC0K3F9%2FK1sGf4iYdIAmk%2FAA0kqW1ru%2F%2FZLo4dt4%2ByElq8WfIqS8h6xw28OTHkK%2B58K3IuwKguN5BSFKWViQ7APhnv1HNdHS1DULaVabKIXgkq3qxEAkCQ1kjUbSVGzq0%2BaC13ddkYi2CPcB4W3qAwvlQr%2BWax3oHymLFuXOtqVHYlJO1oRsQUKxqZDwXQ%2FfpkLIohVvbylXsivlUjw3PTK6ZyyliTzlAUlpPP0kPzP%2BfRcHLHjYsmVfr%2FKT8LV%2BYc2s3JUSSMU6CalaxOrhm82CSXq%2FIoEa3YDKgbaQMYeeDU29HE0l3R7l096%2FPaCGipjKdAdT9API0QLblUjQ%2Fc1B%2Fm4p1EVF9sjTRKJ1Hu3XPogFGloyz5AS7pZSSLLFXkhiLTlL6O0ek1ZdSoSzKIF2ACKhKRA4mVH%2BRWRMMlEbUJJkgMZPjQkzIaWIKxPGekkplEYAayvFWLyNlFUONnTGRSSyQcTkYj07g5aGdSWBRgZuS01Dt62lknZ2JTkGJXkcdr2ZC3inqra8f9eiHOhnuc8ZwwTbX20Pg9CK9G%2B%2ByqwkfGDyo5KhR2Il62SWrSrTgPdZ81GgFTyU5AZ4QA2yjpBMpmIJAOICUDBJREIVu4zzBqmFpCYeYhaGahuj4dZNW7FYLt9DGE2wC42z2LTtDZBbAwxGQwNgbH8Po5plX8qw3W7DLk1pzul2rAIKSIQmoW5OAk6yjAUmL0jDVmhpyAtiGUkjKrtcT1uuVV9ocIUlLaWcSPazzoZJinqHL4LlplK6Ytyw8lFjiUys04Dqp6qxp7GQ4zYXami0kENroVyp%2B9f%2BdT17p%2BuZxXlGUFWn2cd2uubcqd%2BQYBnldlYxrXn%2BgSn5ZuNsdYgSpOzM2VZZ5o3mZ7KQUqU8YyUbNA3CxBkwSHrmDCw4HQSwI5qGRBL4UfQMfnOX35%2BlJAkzBfUpAh85%2FYcmS5ZkfRv5g1USXdbwHdcZuE4jVIwMlu%2F5bRSXtLOb%2FbArVMwLN3kIBt9YDFkosj7TDXx%2FFTFJqpGiO7Yg56TY8kehnPdg8hSmPL%2BJKXM0cUxJ4qVCyegoploaPAayr1B1bMiuBixl0v0CS2lQm113CGoKpHdCRJySFcu0RwgymDKdk5hxJSrDDgVrD3S2EGJ5FGMmOL5I3J0jWfGbua3JYV0VXGU1%2FFQAMxYddRWAIWLbwWA8%2BKZWsPximdFSXEX5Cj%2B6nLdR2dfcGgPdSgV%2Fmt79hMWyEkGNOoZsMmcQLGiw5CyTj4HISnsyRdcq1C4f12zXNZVAhrg2vFRcs08o54%2BIuTiasJrA6LLmcxeuRhC3YNaEhZjPWUDB5SUBXYEbBK4uq37PsgcOaqgfm9Q%2FHFgGBPjoUgg44aji1WW6Vmemm4mAEd6PachIH9mWUya7xcBjPvBY66jk%2BDEUwZKm1VT4cpjBVuNcC%2FsGwIyGbbSUtPOjxZS0NNByvlq3KBafYEdXaZ01sW2ZBX2dohiP6nrEuBH1Ty6KGwedyL9uUYxOSCq6tE%2B3TP5daf%2FQxq3ak221s6slaNfFyxHDvA5eHA9SBTw6fLy61r19dvlcAOGRX18KuQPLtYcYj%2FBoiH3vunA6Ifk4FU7WyXAC0KS7PQJV50e1c3go7%2F1OEP7Wk7w3A0JkAOHrKcPvRUJS2O6v9Yy%2B1%2BJ5jEStOgt5razJv2Yxjkw59uvB2PeEKZa%2B0UwyyHnfUaYOePap%2BIsB2fHrzNcAskleWL2DSwVI6%2BWB6xn3nu%2BnBFc9JRjajeqyBEEHVpq14%2Fmw0nlZ9uy7rxflqcZpoLxAINcpfeI%2FHW%2F7yg01zjycNiiveh%2BC%2FC5QviSIlayxknCzKwxjzGegFQGtKaiNVq99mSFYvnEMojoGh20M2mcCIXQP%2F8ssStPDn1vx3f8%3D">Link to architecture diagram in Diagrams.net</a>
 </p>
 
 
-<div id="org816fbd0" class="figure">
+<div id="org8abdf5f" class="figure">
 <p><img src="images/diagram.png" alt="diagram.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4d38895" class="outline-2">
-<h2 id="org4d38895"><span class="section-number-2">3</span> - Process Flow</h2>
+<div id="outline-container-org957191e" class="outline-2">
+<h2 id="org957191e"><span class="section-number-2">3</span> - Process Flow</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 <a href="https://viewer.diagrams.net/?highlight=0000ff&amp;edit=_blank&amp;layers=1&amp;nav=1&amp;title=Untitled%20Diagram.drawio#R3VjbctowEP0aHtvxBRvnsUAuL51Jhuk0eeoIe7HVyJZHloPJ13dly%2FgiUiidDJPwANpd7Uo6Z48MTNxFWt0KkiffeQRs4lhRNXGXE8cJfA%2FflWPXODwraByxoFHjsjvHir6CdlraW9IIisFEyTmTNB86Q55lEMqBjwjBt8NpG86Gq%2BYkBsOxCgkzvT9pJBN9LM%2Fq%2FHdA46Rd2bZ0JCXtZO0oEhLxbc%2FlXk%2FcheBcNqO0WgBT2LW4NHk3b0T3GxOQyVMSHir37ml24%2FxIlr%2Br11%2F266J4%2FKKrvBBW6gPrzcpdiwBWQbDRmG8TKmGVk1BFtkg3%2BhKZMrRsHJIibxjY0Apw0fmGMrbgjIu6kBsRCDYh%2Bgsp%2BDP0In4YwHqDEb0bEBKqN49p78HDpgOeghQ7nNImtATohrN9bW87%2Blr2kh5zrY%2Fohon3lTtMcaBh%2FQeI3RMgzqJvqlfRChkpChoOkW0SIDJa9SgoJx5aACOSvgzLH0JCr3DPKS7cYe6NMA%2BmX71hkYKXIgSd1%2B%2FScamro6UkETFIo1RNzv7o5%2FPlGXzdl3XWRvB04vgkVX2frYu8ZsZniOV8LXAUq9EtlUm5rjHNuRneYljxAuuE82ejEwQvs0iJZ2kdF9xl9DUmyPMMfdnOgV7z30tg%2FucXmGubqgjOE5h7QKujUu8ssJnB17yk%2BFjGDeR5p7ORcJrzYbgsaBbj55KHzyBQA2CK8sOpymDl4qoKPr%2BqpjNTCjPf6l7OeRLzDqj1b3XfWW9XBpPXFYSlhPprc6Q%2BSEbYrqBFDb16QI3VN5bYimcEg9ZDuYYPKDeDoYvLrd3QiCX1cwcKWd94Hw5lf6yvy6M8%2Ff9bDSoqH3vjJ8UAfkdtrGWlCamNXWtkuPvHvtHLUmaXVltt3qk3KB6geTwevQWau%2BZoI17sSg6GLeMEo1Y4%2BQ52R4XcUaGzL100ux%2FtzfTunw%2F3%2Bg8%3D">Link to process flow in Diagrams.net</a>
 </p>
 
 
-<div id="org55f0f7b" class="figure">
+<div id="org47d8be3" class="figure">
 <p><img src="images/process-flow.png" alt="process-flow.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orge507f1a" class="outline-2">
-<h2 id="orge507f1a"><span class="section-number-2">4</span> - Repository</h2>
+<div id="outline-container-org039ebfc" class="outline-2">
+<h2 id="org039ebfc"><span class="section-number-2">4</span> - Repository</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 <a href="https://github.com/albertoefguerrero/DOTT">https://github.com/albertoefguerrero/DOTT</a>
@@ -474,8 +484,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgb868198" class="outline-2">
-<h2 id="orgb868198"><span class="section-number-2">5</span> Learn about go toolchain</h2>
+<div id="outline-container-org539105c" class="outline-2">
+<h2 id="org539105c"><span class="section-number-2">5</span> Learn about go toolchain</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>Setting up GO environment variables (should be done with root)</li>
@@ -491,8 +501,8 @@
 </div>
 
 
-<div id="outline-container-orgfae7722" class="outline-2">
-<h2 id="orgfae7722"><span class="section-number-2">6</span> Play with code from repository</h2>
+<div id="outline-container-org70d85e0" class="outline-2">
+<h2 id="org70d85e0"><span class="section-number-2">6</span> Play with code from repository</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>Proper goop repository is <code>~github.com/karmakaze/goop</code>. Should change in Dockerfile</li>
@@ -526,8 +536,8 @@ goop go test
 </div>
 </div>
 
-<div id="outline-container-orgfde6a29" class="outline-2">
-<h2 id="orgfde6a29"><span class="section-number-2">7</span> Jenkins with Go</h2>
+<div id="outline-container-org300427b" class="outline-2">
+<h2 id="org300427b"><span class="section-number-2">7</span> Jenkins with Go</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 <a href="https://plugins.jenkins.io/golang/">https://plugins.jenkins.io/golang/</a>
@@ -535,8 +545,8 @@ goop go test
 </div>
 </div>
 
-<div id="outline-container-org3ca0568" class="outline-2">
-<h2 id="org3ca0568"><span class="section-number-2">8</span> Installing and running Docker on CentOS 7</h2>
+<div id="outline-container-org8ba629d" class="outline-2">
+<h2 id="org8ba629d"><span class="section-number-2">8</span> Installing and running Docker on CentOS 7</h2>
 <div class="outline-text-2" id="text-8">
 <div class="org-src-container">
 <pre class="src src-shell">sudo yum -y update
@@ -550,8 +560,8 @@ sudo systemctl start docker
 </div>
 </div>
 
-<div id="outline-container-orgacc43a1" class="outline-2">
-<h2 id="orgacc43a1"><span class="section-number-2">9</span> Building Dockerfile and running</h2>
+<div id="outline-container-org625a7f4" class="outline-2">
+<h2 id="org625a7f4"><span class="section-number-2">9</span> Building Dockerfile and running</h2>
 <div class="outline-text-2" id="text-9">
 <div class="org-src-container">
 <pre class="src src-shell">docker build -t gom .
@@ -568,8 +578,8 @@ docker exec -it &lt;container&gt; &lt;command&gt;
 </div>
 </div>
 
-<div id="outline-container-org3405e51" class="outline-2">
-<h2 id="org3405e51"><span class="section-number-2">10</span> Fixed Dockerfile</h2>
+<div id="outline-container-org94e5292" class="outline-2">
+<h2 id="org94e5292"><span class="section-number-2">10</span> Fixed Dockerfile</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 Testify required Go 1.13+ so using a newer image of golang
@@ -599,16 +609,16 @@ CMD ["ash", "-c", "goop go run api.go convert.go"]
 </div>
 </div>
 
-<div id="outline-container-org4b2ad3d" class="outline-2">
-<h2 id="org4b2ad3d"><span class="section-number-2">11</span> Jenkins with BlueOcean</h2>
+<div id="outline-container-org5779a42" class="outline-2">
+<h2 id="org5779a42"><span class="section-number-2">11</span> Jenkins with BlueOcean</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 It is really easy to create a Pipeline with Jenkins and BlueOcean
 </p>
 </div>
 
-<div id="outline-container-orgf257f8e" class="outline-3">
-<h3 id="orgf257f8e"><span class="section-number-3">11.1</span> Installing with docker</h3>
+<div id="outline-container-org8bcacbb" class="outline-3">
+<h3 id="org8bcacbb"><span class="section-number-3">11.1</span> Installing with docker</h3>
 <div class="outline-text-3" id="text-11-1">
 <p>
 We can install BlueOcean and jenkins with Docker
@@ -624,8 +634,8 @@ We can install BlueOcean and jenkins with Docker
 </div>
 </div>
 
-<div id="outline-container-org7cd3b3d" class="outline-3">
-<h3 id="org7cd3b3d"><span class="section-number-3">11.2</span> Webhook</h3>
+<div id="outline-container-org39ae40d" class="outline-3">
+<h3 id="org39ae40d"><span class="section-number-3">11.2</span> Webhook</h3>
 <div class="outline-text-3" id="text-11-2">
 <ul class="org-ul">
 <li><a href="https://dzone.com/articles/adding-a-github-webhook-in-your-jenkins-pipeline">Adding a GitHub Webhook in Your Jenkins Pipeline</a></li>
@@ -633,18 +643,20 @@ We can install BlueOcean and jenkins with Docker
 <li><a href="https://medium.com/@joydeep56053/continuous-integration-using-jenkins-blueocean-github-ubuntu-robotframework-5b800ae1df8c">Continuous Integration using Jenkins BlueOcean + Github + Ubuntu &amp; Robot Framework</a></li>
 
 <li><a href="https://plugins.jenkins.io/multibranch-scan-webhook-trigger/">Plugin for webhook</a></li>
+
+<li>Example of URL with token named token-test</li>
 </ul>
-
-<p>
-<a href="http://3.129.89.220:8081/multibranch-webhook-trigger/invoke?token=token-test">http://3.129.89.220:8081/multibranch-webhook-trigger/invoke?token=token-test</a>
-</p>
+<pre class="example">
+http://3.129.89.220:8081/multibranch-webhook-trigger/invoke?token=token-test
+</pre>
 </div>
 </div>
 
 
 
-<div id="outline-container-org7c6fc82" class="outline-3">
-<h3 id="org7c6fc82"><span class="section-number-3">11.3</span> Creating a Pipeline</h3>
+
+<div id="outline-container-orgb31a6ea" class="outline-3">
+<h3 id="orgb31a6ea"><span class="section-number-3">11.3</span> Creating a Pipeline</h3>
 <div class="outline-text-3" id="text-11-3">
 <ul class="org-ul">
 <li><a href="https://www.jenkins.io/doc/book/blueocean/creating-pipelines/">Creating a Pipeline with BlueOcean</a></li>
@@ -656,8 +668,8 @@ We can install BlueOcean and jenkins with Docker
 </div>
 </div>
 
-<div id="outline-container-org8bce989" class="outline-2">
-<h2 id="org8bce989"><span class="section-number-2">12</span> Creating a custom Dockerfile with Jenkins, BlueOcean, Go and dependencies</h2>
+<div id="outline-container-org7c63149" class="outline-2">
+<h2 id="org7c63149"><span class="section-number-2">12</span> Creating a custom Dockerfile with Jenkins, BlueOcean, Go and dependencies</h2>
 <div class="outline-text-2" id="text-12">
 <div class="org-src-container">
 <pre class="src src-Dockerfile">FROM jenkinsci/blueocean
@@ -683,10 +695,40 @@ RUN go get github.com/karmakaze/goop \
 With inspiration from <a href="https://stackoverflow.com/a/53405005">here</a> and <a href="https://fukubaka0825.medium.com/how-to-resolve-the-trouble-occurred-when-i-install-go-into-the-alpine-image-3c1e84f2315a">here</a> and <a href="https://stackoverflow.com/a/56613664">here</a>
 </p>
 </div>
+</div>
 
-<div id="outline-container-org44d1af1" class="outline-3">
-<h3 id="org44d1af1"><span class="section-number-3">12.1</span> Running Custom Docker image</h3>
-<div class="outline-text-3" id="text-12-1">
+
+<div id="outline-container-orgc14a972" class="outline-2">
+<h2 id="orgc14a972"><span class="section-number-2">13</span> Custom Dockerfile with Jenkins BlueOcean and Docker</h2>
+<div class="outline-text-2" id="text-13">
+<div class="org-src-container">
+<pre class="src src-Dockerfile">FROM jenkinsci/blueocean
+USER root
+RUN apk add --no-cache git make musl-dev
+RUN apk add --update docker openrc
+RUN rc-update add docker boot
+RUN addgroup username docker
+RUN apk add docker-compose
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-shell">docker run -it -v <span style="color: #79740e;">"/var/run/docker.sock:/var/run/docker.sock:rw"</span> image-name /bin/sh
+</pre>
+</div>
+
+<p>
+<a href="https://stackoverflow.com/questions/54099218/how-can-i-install-docker-inside-an-alpine-container">https://stackoverflow.com/questions/54099218/how-can-i-install-docker-inside-an-alpine-container</a>
+<a href="https://wiki.alpinelinux.org/wiki/Docker#Installation">https://wiki.alpinelinux.org/wiki/Docker#Installation</a>
+<a href="https://stackoverflow.com/questions/28302178/how-can-i-add-a-volume-to-an-existing-docker-container">https://stackoverflow.com/questions/28302178/how-can-i-add-a-volume-to-an-existing-docker-container</a>
+</p>
+</div>
+
+
+
+<div id="outline-container-orgc838a7a" class="outline-3">
+<h3 id="orgc838a7a"><span class="section-number-3">13.1</span> Running Custom Docker image</h3>
+<div class="outline-text-3" id="text-13-1">
 <ul class="org-ul">
 <li>To create the image we do (Make sure the Dockerfile is in path)</li>
 </ul>
@@ -705,19 +747,55 @@ With inspiration from <a href="https://stackoverflow.com/a/53405005">here</a> an
 </div>
 </div>
 
-<div id="outline-container-org2497d79" class="outline-3">
-<h3 id="org2497d79"><span class="section-number-3">12.2</span> <span class="todo TODO">TODO</span> This will create a new Jenkins instance, we have to setup credentials again.</h3>
+<div id="outline-container-org7b191b0" class="outline-3">
+<h3 id="org7b191b0"><span class="section-number-3">13.2</span> <span class="todo TODO">TODO</span> This will create a new Jenkins instance, we have to setup credentials again.</h3>
 </div>
-<div id="outline-container-org01be3bb" class="outline-3">
-<h3 id="org01be3bb"><span class="section-number-3">12.3</span> <span class="todo TODO">TODO</span> Crate an image out of custom image with all credentials</h3>
+<div id="outline-container-org51e7ad1" class="outline-3">
+<h3 id="org51e7ad1"><span class="section-number-3">13.3</span> <span class="todo TODO">TODO</span> Crate an image out of custom image with all credentials</h3>
+</div>
+
+<div id="outline-container-org9a61bc4" class="outline-3">
+<h3 id="org9a61bc4"><span class="section-number-3">13.4</span> <span class="todo TODO">TODO</span> jenkins with docker <a href="https://medium.com/@karthi.net/docker-tutorial-build-docker-images-using-jenkins-d2880e65b74">https://medium.com/@karthi.net/docker-tutorial-build-docker-images-using-jenkins-d2880e65b74</a></h3>
+</div>
+
+<div id="outline-container-orgb7d3e01" class="outline-3">
+<h3 id="orgb7d3e01"><span class="section-number-3">13.5</span> <span class="todo TODO">TODO</span> Integrating SonarQube and Jenkins <a href="https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/">https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/</a></h3>
+</div>
+<div id="outline-container-orgacea895" class="outline-3">
+<h3 id="orgacea895"><span class="section-number-3">13.6</span> <span class="todo TODO">TODO</span> SonarScanner for Jenkins <a href="https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/">https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/</a></h3>
+</div>
+<div id="outline-container-orge79489d" class="outline-3">
+<h3 id="orge79489d"><span class="section-number-3">13.7</span> <span class="todo TODO">TODO</span> Try Out SonarQube <a href="https://docs.sonarqube.org/latest/setup/get-started-2-minutes/">https://docs.sonarqube.org/latest/setup/get-started-2-minutes/</a></h3>
+</div>
+<div id="outline-container-orgcb4f6b2" class="outline-3">
+<h3 id="orgcb4f6b2"><span class="section-number-3">13.8</span> <span class="todo TODO">TODO</span> Dockerhub - SonarQube <a href="https://hub.docker.com/_/sonarqube/">https://hub.docker.com/_/sonarqube/</a></h3>
+</div>
+<div id="outline-container-org6e6829a" class="outline-3">
+<h3 id="org6e6829a"><span class="section-number-3">13.9</span> <span class="todo TODO">TODO</span> SonarQube - Docker installation <a href="https://techexpert.tips/sonarqube/sonarqube-docker-installation/">https://techexpert.tips/sonarqube/sonarqube-docker-installation/</a></h3>
+</div>
+<div id="outline-container-orgc3a15ac" class="outline-3">
+<h3 id="orgc3a15ac"><span class="section-number-3">13.10</span> <span class="todo TODO">TODO</span> Prerequisites and Overview <a href="https://docs.sonarqube.org/latest/requirements/requirements/">https://docs.sonarqube.org/latest/requirements/requirements/</a></h3>
+<div class="outline-text-3" id="text-13-10">
+<p>
+Hardware Requirements
+A small-scale (individual or small team) instance of the SonarQube server requires at least 2GB of RAM to run efficiently and 1GB of free RAM for the OS. If you are installing an instance for a large teams or Enterprise, please consider the additional recommendations below.
+The amount of disk space you need will depend on how much code you analyze with SonarQube.
+SonarQube must be installed on hard drives that have excellent read &amp; write performance. Most importantly, the "data" folder houses the Elasticsearch indices on which a huge amount of I/O will be done when the server is up and running. Great read &amp; write hard drive performance will therefore have a great impact on the overall SonarQube server performance.
+SonarQube does not support 32-bit systems on the server side. SonarQube does, however, support 32-bit systems on the scanner side.
+</p>
+</div>
+</div>
+<div id="outline-container-org0f9c514" class="outline-3">
+<h3 id="org0f9c514"><span class="section-number-3">13.11</span> <span class="todo TODO">TODO</span> Keep the app running</h3>
+</div>
+<div id="outline-container-orgbc7e099" class="outline-3">
+<h3 id="orgbc7e099"><span class="section-number-3">13.12</span> <span class="todo TODO">TODO</span> Docker code in an external</h3>
 </div>
 </div>
 
-
-
-<div id="outline-container-orgeaae751" class="outline-2">
-<h2 id="orgeaae751"><span class="section-number-2">13</span> - Notes</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-org8e9a597" class="outline-2">
+<h2 id="org8e9a597"><span class="section-number-2">14</span> - Notes</h2>
+<div class="outline-text-2" id="text-14">
 <ul class="org-ul">
 <li><a href="https://www.redhat.com/architect/diagramming-tools-cloud-infrastructure">6 architectural diagramming tools for cloud infrastructure</a></li>
 <li><a href="https://gitlab.com/redhatdemocentral/portfolio-architecture-examples">Portfolio Architecture Examples</a></li>
@@ -742,7 +820,7 @@ Fix with Go 1.13</li>
 <div id="postamble" class="status">
 <p class="date">Date: 2020-12-12 sáb 00:00</p>
 <p class="author">Author: Alberto Flores</p>
-<p class="date">Created: 2020-12-15 mar 16:45</p>
+<p class="date">Created: 2020-12-16 mié 12:45</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
