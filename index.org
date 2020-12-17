@@ -173,8 +173,6 @@ http://3.129.89.220:8081/multibranch-webhook-trigger/invoke?token=token-test
 #+end_src
 
 
-
-
 ** Creating a Pipeline
 - [[https://www.jenkins.io/doc/book/blueocean/creating-pipelines/][Creating a Pipeline with BlueOcean]]
 - [[https://www.jenkins.io/doc/book/blueocean/pipeline-editor/][BlueOcean Pipeline Editor]]
@@ -224,8 +222,6 @@ https://stackoverflow.com/questions/54099218/how-can-i-install-docker-inside-an-
 https://wiki.alpinelinux.org/wiki/Docker#Installation
 https://stackoverflow.com/questions/28302178/how-can-i-add-a-volume-to-an-existing-docker-container
 
-
-
 ** Running Custom Docker image
 - To create the image we do (Make sure the Dockerfile is in path)
 #+begin_src shell
@@ -237,17 +233,29 @@ docker build -t custom .
 docker run -p 8000:8000 -p 8080:8080 custom
 #+end_src
 
-** TODO This will create a new Jenkins instance, we have to setup credentials again.
-** TODO Crate an image out of custom image with all credentials
 
-** TODO jenkins with docker https://medium.com/@karthi.net/docker-tutorial-build-docker-images-using-jenkins-d2880e65b74
+export JAVA_HOME=/opt/java/current && export PATH=$PATH:$JAVA_HOME/bin &&
 
-** TODO Integrating SonarQube and Jenkins https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/
-** TODO SonarScanner for Jenkins https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/
-** TODO Try Out SonarQube https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
-** TODO Dockerhub - SonarQube https://hub.docker.com/_/sonarqube/
-** TODO SonarQube - Docker installation https://techexpert.tips/sonarqube/sonarqube-docker-installation/
-** TODO Prerequisites and Overview https://docs.sonarqube.org/latest/requirements/requirements/
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk && export PATH="$JAVA_HOME/bin:${PATH}" &&
+docker run --network=host -e SONAR_HOST_URL='http://albertoefg1c.mylabserver.com:9090' --user="$(id -u):$(id -g)" -v "$PWD:/usr/src" sonarsource/sonar-scanner-cli
+
+http://pietervogelaar.nl/jenkinsfile-docker-pipeline-multi-stage
+
+https://www.kabisa.nl/tech/running-multiple-docker-containers-in-parallel-with-jenkins/
+
+https://stackoverflow.com/questions/49782267/running-multiple-docker-containers-from-a-single-jenkinsfile
+
+** This will create a new Jenkins instance, we have to setup credentials again.
+** Crate an image out of custom image with all credentials
+
+** jenkins with docker https://medium.com/@karthi.net/docker-tutorial-build-docker-images-using-jenkins-d2880e65b74
+
+** Integrating SonarQube and Jenkins https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/
+** SonarScanner for Jenkins https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/
+** Try Out SonarQube https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
+** Dockerhub - SonarQube https://hub.docker.com/_/sonarqube/
+** SonarQube - Docker installation https://techexpert.tips/sonarqube/sonarqube-docker-installation/
+** Prerequisites and Overview https://docs.sonarqube.org/latest/requirements/requirements/
 Hardware Requirements
 A small-scale (individual or small team) instance of the SonarQube server requires at least 2GB of RAM to run efficiently and 1GB of free RAM for the OS. If you are installing an instance for a large teams or Enterprise, please consider the additional recommendations below.
 The amount of disk space you need will depend on how much code you analyze with SonarQube.
@@ -280,7 +288,16 @@ docker run -d --name sonarqube \
               sonarsource/sonar-scanner-cli -X
 #+end_src
 
+--network host -e SONAR_HOST_URL="http://3.138.247.153/" -e SONAR_LOGIN="99a7536d3c88fc79e7f1dd189f99b4cf59926cc6" -v "/var/jenkins_home/workspace/DOTT_master/cidr_convert_api/go/"
 
+
+#+begin_src shell
+sonar-scanner \
+  -Dsonar.projectKey=test-key1 \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://3.22.117.110 \
+  -Dsonar.login=test
+#+end_src
 
 
 
