@@ -5,59 +5,59 @@
 #+TITLE: Final Challenge
 #+LANGUAGE: en
 * - Kanban
-|----------------------+--------------+-----------------------------------|
-| TODO                 | Doing        | Done                              |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Learn about Architecture Diagrams |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Design Processes Diagram          |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Design Information Flow           |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Clone Repository                  |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Install docker, git and go        |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Learn about Go toolchain          |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Play with code from repository    |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Run code and tests on docker      |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Fix Docker image                  |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Docker: Jenkins and BlueOcean     |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Simple BlueOcean pipeline         |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Pipeline: Build step              |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Pipeline: Testing step            |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Custom docker image with Go       |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Jenkins Webhook                   |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Learn about Sonar Qube            |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Install sonarqube                 |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Integrate Sonar Qube              |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Jenkins for Docker Orchestration  |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Everithing in Docker !!           |
-|----------------------+--------------+-----------------------------------|
-|                      |              | Linting and formatting            |
-|----------------------+--------------+-----------------------------------|
-|                      |              | CV                                |
-|----------------------+--------------+-----------------------------------|
-| Publishing to docker |              |                                   |
-|----------------------+--------------+-----------------------------------|
-| Secure Jenkins       |              |                                   |
-|----------------------+--------------+-----------------------------------|
-|                      | Fix the code |                                   |
-|----------------------+--------------+-----------------------------------|
+|----------------------+-------+-----------------------------------|
+| TODO                 | Doing | Done                              |
+|----------------------+-------+-----------------------------------|
+|                      |       | Learn about Architecture Diagrams |
+|----------------------+-------+-----------------------------------|
+|                      |       | Design Processes Diagram          |
+|----------------------+-------+-----------------------------------|
+|                      |       | Design Information Flow           |
+|----------------------+-------+-----------------------------------|
+|                      |       | Clone Repository                  |
+|----------------------+-------+-----------------------------------|
+|                      |       | Install docker, git and go        |
+|----------------------+-------+-----------------------------------|
+|                      |       | Learn about Go toolchain          |
+|----------------------+-------+-----------------------------------|
+|                      |       | Play with code from repository    |
+|----------------------+-------+-----------------------------------|
+|                      |       | Run code and tests on docker      |
+|----------------------+-------+-----------------------------------|
+|                      |       | Fix Docker image                  |
+|----------------------+-------+-----------------------------------|
+|                      |       | Docker: Jenkins and BlueOcean     |
+|----------------------+-------+-----------------------------------|
+|                      |       | Simple BlueOcean pipeline         |
+|----------------------+-------+-----------------------------------|
+|                      |       | Pipeline: Build step              |
+|----------------------+-------+-----------------------------------|
+|                      |       | Pipeline: Testing step            |
+|----------------------+-------+-----------------------------------|
+|                      |       | Custom docker image with Go       |
+|----------------------+-------+-----------------------------------|
+|                      |       | Jenkins Webhook                   |
+|----------------------+-------+-----------------------------------|
+|                      |       | Learn about Sonar Qube            |
+|----------------------+-------+-----------------------------------|
+|                      |       | Install sonarqube                 |
+|----------------------+-------+-----------------------------------|
+|                      |       | Integrate Sonar Qube              |
+|----------------------+-------+-----------------------------------|
+|                      |       | Jenkins for Docker Orchestration  |
+|----------------------+-------+-----------------------------------|
+|                      |       | Everithing in Docker !!           |
+|----------------------+-------+-----------------------------------|
+|                      |       | Linting and formatting            |
+|----------------------+-------+-----------------------------------|
+|                      |       | CV                                |
+|----------------------+-------+-----------------------------------|
+| Publishing to docker |       |                                   |
+|----------------------+-------+-----------------------------------|
+| Secure Jenkins       |       |                                   |
+|----------------------+-------+-----------------------------------|
+|                      |       | Fix the code                      |
+|----------------------+-------+-----------------------------------|
 
 * - Architecture Diagram
   [[https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#R7Vrdc9o4EP9reISxJduYRxJCOze9Tq9pJ9enjLCF0SFbnC0K3F9%2FK1sGf4iYdIAmk%2FAA0kqW1ru%2F%2FZLo4dt4%2ByElq8WfIqS8h6xw28OTHkK%2B58K3IuwKguN5BSFKWViQ7APhnv1HNdHS1DULaVabKIXgkq3qxEAkCQ1kjUbSVGzq0%2BaC13ddkYi2CPcB4W3qAwvlQr%2BWax3oHymLFuXOtqVHYlJO1oRsQUKxqZDwXQ%2FfpkLIohVvbylXsivlUjw3PTK6ZyyliTzlAUlpPP0kPzP%2BfRcHLHjYsmVfr%2FKT8LV%2BYc2s3JUSSMU6CalaxOrhm82CSXq%2FIoEa3YDKgbaQMYeeDU29HE0l3R7l096%2FPaCGipjKdAdT9API0QLblUjQ%2Fc1B%2Fm4p1EVF9sjTRKJ1Hu3XPogFGloyz5AS7pZSSLLFXkhiLTlL6O0ek1ZdSoSzKIF2ACKhKRA4mVH%2BRWRMMlEbUJJkgMZPjQkzIaWIKxPGekkplEYAayvFWLyNlFUONnTGRSSyQcTkYj07g5aGdSWBRgZuS01Dt62lknZ2JTkGJXkcdr2ZC3inqra8f9eiHOhnuc8ZwwTbX20Pg9CK9G%2B%2ByqwkfGDyo5KhR2Il62SWrSrTgPdZ81GgFTyU5AZ4QA2yjpBMpmIJAOICUDBJREIVu4zzBqmFpCYeYhaGahuj4dZNW7FYLt9DGE2wC42z2LTtDZBbAwxGQwNgbH8Po5plX8qw3W7DLk1pzul2rAIKSIQmoW5OAk6yjAUmL0jDVmhpyAtiGUkjKrtcT1uuVV9ocIUlLaWcSPazzoZJinqHL4LlplK6Ytyw8lFjiUys04Dqp6qxp7GQ4zYXami0kENroVyp%2B9f%2BdT17p%2BuZxXlGUFWn2cd2uubcqd%2BQYBnldlYxrXn%2BgSn5ZuNsdYgSpOzM2VZZ5o3mZ7KQUqU8YyUbNA3CxBkwSHrmDCw4HQSwI5qGRBL4UfQMfnOX35%2BlJAkzBfUpAh85%2FYcmS5ZkfRv5g1USXdbwHdcZuE4jVIwMlu%2F5bRSXtLOb%2FbArVMwLN3kIBt9YDFkosj7TDXx%2FFTFJqpGiO7Yg56TY8kehnPdg8hSmPL%2BJKXM0cUxJ4qVCyegoploaPAayr1B1bMiuBixl0v0CS2lQm113CGoKpHdCRJySFcu0RwgymDKdk5hxJSrDDgVrD3S2EGJ5FGMmOL5I3J0jWfGbua3JYV0VXGU1%2FFQAMxYddRWAIWLbwWA8%2BKZWsPximdFSXEX5Cj%2B6nLdR2dfcGgPdSgV%2Fmt79hMWyEkGNOoZsMmcQLGiw5CyTj4HISnsyRdcq1C4f12zXNZVAhrg2vFRcs08o54%2BIuTiasJrA6LLmcxeuRhC3YNaEhZjPWUDB5SUBXYEbBK4uq37PsgcOaqgfm9Q%2FHFgGBPjoUgg44aji1WW6Vmemm4mAEd6PachIH9mWUya7xcBjPvBY66jk%2BDEUwZKm1VT4cpjBVuNcC%2FsGwIyGbbSUtPOjxZS0NNByvlq3KBafYEdXaZ01sW2ZBX2dohiP6nrEuBH1Ty6KGwedyL9uUYxOSCq6tE%2B3TP5daf%2FQxq3ak221s6slaNfFyxHDvA5eHA9SBTw6fLy61r19dvlcAOGRX18KuQPLtYcYj%2FBoiH3vunA6Ifk4FU7WyXAC0KS7PQJV50e1c3go7%2F1OEP7Wk7w3A0JkAOHrKcPvRUJS2O6v9Yy%2B1%2BJ5jEStOgt5razJv2Yxjkw59uvB2PeEKZa%2B0UwyyHnfUaYOePap%2BIsB2fHrzNcAskleWL2DSwVI6%2BWB6xn3nu%2BnBFc9JRjajeqyBEEHVpq14%2Fmw0nlZ9uy7rxflqcZpoLxAINcpfeI%2FHW%2F7yg01zjycNiiveh%2BC%2FC5QviSIlayxknCzKwxjzGegFQGtKaiNVq99mSFYvnEMojoGh20M2mcCIXQP%2F8ssStPDn1vx3f8%3D][Link to architecture diagram in Diagrams.net]]
@@ -315,7 +315,7 @@ sonar-scanner \
 - Golang Convert Cidr Address To Hosts https://www.stevencampbell.info/Golang-Convert-CIDR-Address-To-Hosts/
 - IPv4 Subnet Calculator (GO library) https://github.com/brotherpowers/ipsubnet
 
-
+- convert-ipmask-to-ipaddr https://stackoverflow.com/questions/52448110/convert-ipmask-to-ipaddr
 
 
 * - Notes
