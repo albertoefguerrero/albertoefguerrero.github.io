@@ -254,24 +254,22 @@ https://www.kabisa.nl/tech/running-multiple-docker-containers-in-parallel-with-j
 
 https://stackoverflow.com/questions/49782267/running-multiple-docker-containers-from-a-single-jenkinsfile
 
-** This will create a new Jenkins instance, we have to setup credentials again.
-** Crate an image out of custom image with all credentials
+- This will create a new Jenkins instance, we have to setup credentials again.
+- Crate an image out of custom image with all credentials
+- jenkins with docker https://medium.com/@karthi.net/docker-tutorial-build-docker-images-using-jenkins-d2880e65b74
+- Integrating SonarQube and Jenkins https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/
+- SonarScanner for Jenkins https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/
+- Try Out SonarQube https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
+- Dockerhub - SonarQube https://hub.docker.com/_/sonarqube/
+- SonarQube - Docker installation https://techexpert.tips/sonarqube/sonarqube-docker-installation/
 
-** jenkins with docker https://medium.com/@karthi.net/docker-tutorial-build-docker-images-using-jenkins-d2880e65b74
+** Prerequisites and Overview SonarQube https://docs.sonarqube.org/latest/requirements/requirements/
 
-** Integrating SonarQube and Jenkins https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/
-** SonarScanner for Jenkins https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/
-** Try Out SonarQube https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
-** Dockerhub - SonarQube https://hub.docker.com/_/sonarqube/
-** SonarQube - Docker installation https://techexpert.tips/sonarqube/sonarqube-docker-installation/
-** Prerequisites and Overview https://docs.sonarqube.org/latest/requirements/requirements/
 Hardware Requirements
 A small-scale (individual or small team) instance of the SonarQube server requires at least 2GB of RAM to run efficiently and 1GB of free RAM for the OS. If you are installing an instance for a large teams or Enterprise, please consider the additional recommendations below.
 The amount of disk space you need will depend on how much code you analyze with SonarQube.
 SonarQube must be installed on hard drives that have excellent read & write performance. Most importantly, the "data" folder houses the Elasticsearch indices on which a huge amount of I/O will be done when the server is up and running. Great read & write hard drive performance will therefore have a great impact on the overall SonarQube server performance.
 SonarQube does not support 32-bit systems on the server side. SonarQube does, however, support 32-bit systems on the scanner side.
-** TODO Keep the app running
-** TODO Docker code in an external
 
 * Sonar Qube
   #+begin_src shell
@@ -286,7 +284,7 @@ docker run -d --name sonarqube \
     sonarqube
   #+end_src
 
-  docker run -d --name sonarqube3 -p 9090:9000 -p 9092:9092 -v sonarqube-conf:/opt/sonarqube/conf -v sonarqube-data:/opt/sonarqube/data -v sonarqube-logs:/opt/sonarqube/logs -v sonarqube-extensions:/opt/sonarqube/extensions sonarqube
+~docker run -d --name sonarqube3 -p 9090:9000 -p 9092:9092 -v sonarqube-conf:/opt/sonarqube/conf -v sonarqube-data:/opt/sonarqube/data -v sonarqube-logs:/opt/sonarqube/logs -v sonarqube-extensions:/opt/sonarqube/extensions sonarqube~
 
 ** Sonar Scanner
 #+begin_src shell
@@ -297,7 +295,7 @@ docker run -d --name sonarqube \
               sonarsource/sonar-scanner-cli -X
 #+end_src
 
---network host -e SONAR_HOST_URL="http://3.138.247.153/" -e SONAR_LOGIN="99a7536d3c88fc79e7f1dd189f99b4cf59926cc6" -v "/var/jenkins_home/workspace/DOTT_master/cidr_convert_api/go/"
+~--network host -e SONAR_HOST_URL="http://3.138.247.153/" -e SONAR_LOGIN="99a7536d3c88fc79e7f1dd189f99b4cf59926cc6" -v "/var/jenkins_home/workspace/DOTT_master/cidr_convert_api/go/"~
 
 
 #+begin_src shell
