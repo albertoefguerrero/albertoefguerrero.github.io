@@ -5,61 +5,61 @@
 #+TITLE: Final Challenge
 #+LANGUAGE: en
 * - Kanban
-|------------+-------+-----------------------------------|
-| TODO       | Doing | Done                              |
-|------------+-------+-----------------------------------|
-|            |       | Learn about Architecture Diagrams |
-|------------+-------+-----------------------------------|
-|            |       | Design Processes Diagram          |
-|------------+-------+-----------------------------------|
-|            |       | Design Information Flow           |
-|------------+-------+-----------------------------------|
-|            |       | Clone Repository                  |
-|------------+-------+-----------------------------------|
-|            |       | Install docker, git and go        |
-|------------+-------+-----------------------------------|
-|            |       | Learn about Go toolchain          |
-|------------+-------+-----------------------------------|
-|            |       | Play with code from repository    |
-|------------+-------+-----------------------------------|
-|            |       | Run code and tests on docker      |
-|------------+-------+-----------------------------------|
-|            |       | Fix Docker image                  |
-|------------+-------+-----------------------------------|
-|            |       | Docker: Jenkins and BlueOcean     |
-|------------+-------+-----------------------------------|
-|            |       | Simple BlueOcean pipeline         |
-|------------+-------+-----------------------------------|
-|            |       | Pipeline: Build step              |
-|------------+-------+-----------------------------------|
-|            |       | Pipeline: Testing step            |
-|------------+-------+-----------------------------------|
-|            |       | Custom docker image with Go       |
-|------------+-------+-----------------------------------|
-|            |       | Jenkins Webhook                   |
-|------------+-------+-----------------------------------|
-|            |       | Learn about Sonar Qube            |
-|------------+-------+-----------------------------------|
-|            |       | Install sonarqube                 |
-|------------+-------+-----------------------------------|
-|            |       | Integrate Sonar Qube              |
-|------------+-------+-----------------------------------|
-|            |       | Jenkins for Docker Orchestration  |
-|------------+-------+-----------------------------------|
-|            |       | Everything in Docker !!           |
-|------------+-------+-----------------------------------|
-|            |       | Linting and formatting            |
-|------------+-------+-----------------------------------|
-|            |       | CV                                |
-|------------+-------+-----------------------------------|
-|            |       | Secure Jenkins                    |
-|------------+-------+-----------------------------------|
-|            |       | Fix the code                      |
-|------------+-------+-----------------------------------|
-|            |       | JUnit test reporting for Jenkins  |
-|------------+-------+-----------------------------------|
-| Publishing |       |                                   |
-|------------+-------+-----------------------------------|
+|------+-------+-----------------------------------|
+| TODO | Doing | Done                              |
+|------+-------+-----------------------------------|
+|      |       | Learn about Architecture Diagrams |
+|------+-------+-----------------------------------|
+|      |       | Design Processes Diagram          |
+|------+-------+-----------------------------------|
+|      |       | Design Information Flow           |
+|------+-------+-----------------------------------|
+|      |       | Clone Repository                  |
+|------+-------+-----------------------------------|
+|      |       | Install docker, git and go        |
+|------+-------+-----------------------------------|
+|      |       | Learn about Go toolchain          |
+|------+-------+-----------------------------------|
+|      |       | Play with code from repository    |
+|------+-------+-----------------------------------|
+|      |       | Run code and tests on docker      |
+|------+-------+-----------------------------------|
+|      |       | Fix Docker image                  |
+|------+-------+-----------------------------------|
+|      |       | Docker: Jenkins and BlueOcean     |
+|------+-------+-----------------------------------|
+|      |       | Simple BlueOcean pipeline         |
+|------+-------+-----------------------------------|
+|      |       | Pipeline: Build step              |
+|------+-------+-----------------------------------|
+|      |       | Pipeline: Testing step            |
+|------+-------+-----------------------------------|
+|      |       | Custom docker image with Go       |
+|------+-------+-----------------------------------|
+|      |       | Jenkins Webhook                   |
+|------+-------+-----------------------------------|
+|      |       | Learn about Sonar Qube            |
+|------+-------+-----------------------------------|
+|      |       | Install sonarqube                 |
+|------+-------+-----------------------------------|
+|      |       | Integrate Sonar Qube              |
+|------+-------+-----------------------------------|
+|      |       | Jenkins for Docker Orchestration  |
+|------+-------+-----------------------------------|
+|      |       | Everything in Docker !!           |
+|------+-------+-----------------------------------|
+|      |       | Linting and formatting            |
+|------+-------+-----------------------------------|
+|      |       | CV                                |
+|------+-------+-----------------------------------|
+|      |       | Secure Jenkins                    |
+|------+-------+-----------------------------------|
+|      |       | Fix the code                      |
+|------+-------+-----------------------------------|
+|      |       | JUnit test reporting for Jenkins  |
+|------+-------+-----------------------------------|
+|      |       | Publishing to github              |
+|------+-------+-----------------------------------|
 
 
 * - Architecture Diagram
@@ -343,6 +343,8 @@ https://fedidat.com/270-jenkinsfile-scripted-secret-text/
 https://www.jenkins.io/doc/pipeline/tour/environment/
 
 
+Environment variables http://albertoefg2c.mylabserver.com:8080/env-vars.html/
+
 
 * Coverage
 https://docs.sonarqube.org/latest/analysis/languages/go/
@@ -369,7 +371,6 @@ https://community.sonarsource.com/t/coverage-test-data-generate-reports-for-apex
 
 After that we just create an step in jenkins to upload them
 
-
 * Publishing
   Package should include both ~api~ and ~go.sum~ files
   https://blog.golang.org/using-go-modules
@@ -377,6 +378,29 @@ After that we just create an step in jenkins to upload them
 #+begin_quote
 The go command uses the go.sum file to ensure that future downloads of these modules retrieve the same bits as the first download, to ensure the modules your project depends on do not change unexpectedly, whether for malicious, accidental, or other reasons. Both go.mod and go.sum should be checked into version control.
 #+end_quote
+
+
+github-release https://github.com/github-release/github-release
+Upload build artifact to Github as release in Jenkins https://stackoverflow.com/questions/24585609/upload-build-artifact-to-github-as-release-in-jenkins
+
+GO build should be statically linked
+
+This is for linux
+#+begin_src shell
+$ env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o app
+#+end_src
+
+https://oddcode.daveamit.com/2018/08/16/statically-compile-golang-binary/
+https://www.arp242.net/static-go.html
+
+
+
+** NO longer possible to run binary only
+https://golang.org/pkg/go/build/
+#+begin_quote
+"go build" and other commands no longer support binary-only-packages. Import and ImportDir will still set the BinaryOnly flag in packages containing these comments for use in tools and error messages.
+#+end_quote
+
 
 
 * - Notes
